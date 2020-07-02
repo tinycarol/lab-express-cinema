@@ -34,3 +34,34 @@ a {
   color: cadetblue;
   text-decoration: none;
 }
+
+#movies {
+  margin: 20px 40px;
+}
+
+#movies-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#movies-wrapper .movie-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  align-items: center;
+}
+
+#movies-wrapper .movie-wrapper img {
+  max-height: 200px;
+  max-width: 150px;
+  width: auto;
+}
+
+#movies-wrapper .movie-wrapper .button {
+  background-color: coral;
+  color: white;
+  padding: 5px 20px;
+  margin-top: 5px;
+}
