@@ -33,9 +33,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // default value for title local
+// Locals are variables that are available in all of our templates (.hbs files)
+// This gets used in the layout.hbs file, but you can use it wherever you want!
+// And you can add more variables if you want too
 app.locals.title = 'Express - Generated with IronGenerator';
 
 const index = require('./routes/index');
+const morgan = require('morgan');
 app.use('/', index);
 
-module.exports = app;
+app.listen(3000, () => console.log('Server listening on port 3000'));
