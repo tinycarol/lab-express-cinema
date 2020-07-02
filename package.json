@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -e hbs,css,js app.js",
-    "seeds": "node scripts/seeds.js"
+    "seeds": "node bin/seeds.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.5",
