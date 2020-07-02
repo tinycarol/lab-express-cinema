@@ -65,3 +65,18 @@ a {
   padding: 5px 20px;
   margin-top: 5px;
 }
+
+#movie-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+#movie-wrapper #movie-info-wrapper {
+  width: 70%;
+}
+
+#movie-wrapper #movie-info-wrapper p span + span {
+  border-left: 1px solid black;
+  padding-left: 5px;
+}
